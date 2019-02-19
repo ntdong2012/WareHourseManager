@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="LabelTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="TransferItemTableViewCell" id="KGk-i7-Jjw" customClass="TransferItemTableViewCell" customModule="WareHourseManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdT-SD-sgk">
+                        <rect key="frame" x="6" y="5" width="95" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="L7f-cM-bjZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-cg-eQe">
+                        <rect key="frame" x="106" y="5" width="204" height="33.5"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15.5"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Vts-cg-eQe" secondAttribute="trailing" constant="10" id="9lB-kM-ttA"/>
+                    <constraint firstItem="vdT-SD-sgk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="F75-WE-jO1"/>
+                    <constraint firstItem="vdT-SD-sgk" firstAttribute="baseline" secondItem="Vts-cg-eQe" secondAttribute="baseline" id="Gpn-3c-vUZ"/>
+                    <constraint firstItem="Vts-cg-eQe" firstAttribute="leading" secondItem="vdT-SD-sgk" secondAttribute="trailing" constant="5" id="dRl-br-h5j"/>
+                    <constraint firstItem="vdT-SD-sgk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fUp-EO-qb3"/>
+                    <constraint firstItem="vdT-SD-sgk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="jb5-GH-3eY"/>
+                    <constraint firstItem="vdT-SD-sgk" firstAttribute="top" secondItem="Vts-cg-eQe" secondAttribute="top" id="mpp-xA-PYi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="vdT-SD-sgk" id="w8m-dU-H5l"/>
+                <outlet property="labelContent" destination="Vts-cg-eQe" id="5vc-rv-JMV"/>
+            </connections>
+            <point key="canvasLocation" x="142.5" y="67.5"/>
+        </tableViewCell>
+    </objects>
+</document>
